@@ -213,6 +213,7 @@ const ContextMenu: React.FC<ContextMenuProps> = ({
               iconLocation={iconLocation}
               width={width || "100%"}
               item={item}
+              disabled={isString(item) ? !onClick : !item.onClick && !onClick}
               onClick={e => {
                 e.stopPropagation()
                 if (!isString(item) && item.onClick) {
