@@ -24,7 +24,7 @@ const Container = styled("div")({
   display: "flex",
 })
 
-const GroupedAvatar = styled(Avatar)({
+const GroupedAvatar = styled(Avatar:not(:first-child)({
   marginLeft: -12,
 })
 
